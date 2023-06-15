@@ -61,25 +61,29 @@
             
         }
 
+        footer{
+            font-size: 8pt;
+        }
+
     </style>
     
     </head>
     <body>
         <div class="container">
             <div class="penjelasan">
-                <h1 id="result">Right</h1>
+                <h1 id="result">Click Button</h1>
             </div>
 
             <div class="button">
                 <div class="leftside">
-                    <button class="up" id="up">Up</button>
-                    <button class="left" id="left">Left</button>
-                    <button class="down" id="down">Down</button>
-                    <button class="right" id="right">Right</button>
+                    <button class="up" id="up" onclick="textup()">Up</button>
+                    <button class="left" id="left" onclick="textleft()">Left</button>
+                    <button class="down" id="down" onclick="textdown()">Down</button>
+                    <button class="right" id="right" onclick="textright()">Right</button>
                 </div>
                 <div class="rightside">
-                    <button class="b" id="b">B</button>
-                    <button class="a" id="a">A</button>
+                    <button class="b" id="b" onclick="textb()">B</button>
+                    <button class="a" id="a" onclick="texta()">A</button>
                 </div>
             </div>    
         </div>
