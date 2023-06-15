@@ -5,8 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoyCon</title>
-</head>
-<body>
+    <style>
+        *{
+            text-align: center;
+        }
+        .container{
+            text-align: center;
+            margin: 0 auto;
+            max-width: 960px;
+            padding-top: 100px;
+        }
+
+        .penjelasan{
+            background-color: azure;
+            border-radius: 15px;
+        }
+
+        .button{
+            display: flex;
+            background-color: rgb(176, 253, 176);
+            border-radius: 15px;
+            justify-content: space-between;
+            padding: 90px 60px;
+            width: 600px;
+            margin:auto;
+        }
+        .leftside button{
+            margin-right: 8px;
+            width: 55px;
+            height: 55px;
+        }
+
+        .rightside button{
+            margin-left: 8px;
+            width: 55px;
+            height: 55px;
+        }
+        
+
+        .up{
+            position: relative;
+            bottom: 33px;
+            left: 134px;
+        }
+
+        .left, .down, .right{
+            position: relative;
+            top: 33px;
+        }
+
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="penjelasan">
+                <h1>Isian</h1>
+            </div>
+
+            <div class="button">
+                <div class="leftside">
+                    <button class="up" id="up">Up</button>
+                    <button class="left" id="left">Left</button>
+                    <button class="down" id="down">Down</button>
+                    <button class="right" id="right">Right</button>
+                </div>
+                <div class="rightside">
+                    <button class="b" id="b">B</button>
+                    <button class="a" id="a">A</button>
+                </div>
+            </div>    
+        </div>
+        
     <!-- buat komponen yang menggambarkan controller @MUTAMA -->
     <!--    [^]                -->
     <!-- [<][v][>]      [B][A] -->
