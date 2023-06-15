@@ -17,13 +17,16 @@
         }
 
         .penjelasan{
-            background-color: azure;
-            border-radius: 15px;
+            background-color: rgb(255, 208, 137);
+            text-align: center;
+            border-radius: 10px;
+            width: 600px;
+            margin: auto;
         }
 
         .button{
             display: flex;
-            background-color: rgb(176, 253, 176);
+            background-color: rgb(255, 248, 146);
             border-radius: 15px;
             justify-content: space-between;
             padding: 90px 60px;
@@ -34,12 +37,14 @@
             margin-right: 8px;
             width: 55px;
             height: 55px;
+            border-radius: 6px;
         }
 
         .rightside button{
             margin-left: 8px;
             width: 55px;
             height: 55px;
+            border-radius: 6px;
         }
         
 
@@ -47,11 +52,13 @@
             position: relative;
             bottom: 33px;
             left: 134px;
+           
         }
 
         .left, .down, .right{
             position: relative;
             top: 33px;
+            
         }
 
     </style>
@@ -60,7 +67,7 @@
     <body>
         <div class="container">
             <div class="penjelasan">
-                <h1>Isian</h1>
+                <h1 id="result">Right</h1>
             </div>
 
             <div class="button">
@@ -76,7 +83,8 @@
                 </div>
             </div>    
         </div>
-        
+        <script src="main.js"></script>
+
     <!-- buat komponen yang menggambarkan controller @MUTAMA -->
     <!--    [^]                -->
     <!-- [<][v][>]      [B][A] -->
